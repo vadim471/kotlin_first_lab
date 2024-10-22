@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:id="@+id/main"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bit_me"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginBottom="8dp"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:background="@color/white"
+            android:src="@drawable/main_picture"
+            android:layout_marginTop="40dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="bottom"
+        >
+
+
+        <Button
+            android:id="@+id/stone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/scissors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scissors"
+            app:layout_constraintLeft_toRightOf="@id/stone"
+            app:layout_constraintTop_toTopOf="@id/stone" />
+
+
+        <Button
+            android:id="@+id/paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paper"
+            app:layout_constraintLeft_toRightOf="@id/scissors"
+            app:layout_constraintTop_toTopOf="@id/stone" />
+
+    </LinearLayout>
+</LinearLayout>

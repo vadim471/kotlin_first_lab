@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">first_lab</string>
+    <string name="bit_me">Bit me!</string>
+    <string name="scissors">Ножницы</string>
+    <string name="paper">Бумага</string>
+    <string name="stone">Камень</string>
+</resources>
