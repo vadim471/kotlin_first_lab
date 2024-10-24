@@ -55,6 +55,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/stone"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_design"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,6 +65,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/scissors"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_design"
             app:layout_constraintLeft_toRightOf="@id/stone"
             app:layout_constraintTop_toTopOf="@id/stone" />
 
@@ -72,6 +76,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/paper"
+            android:background="@drawable/button_design"
+            android:layout_margin="8dp"
             app:layout_constraintLeft_toRightOf="@id/scissors"
             app:layout_constraintTop_toTopOf="@id/stone" />
 

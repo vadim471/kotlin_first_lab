@@ -1,5 +1,6 @@
 package com.example.first_lab
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -19,13 +20,14 @@ class MainActivity : AppCompatActivity() {
 
         buttons.forEach { (biteBy, button) ->
             button.setOnClickListener {
-                second_activity(biteBy)
+                openSecondActivity(biteBy)
             }
         }
-        val button = findViewById<Button>(R.id.stone)
-        button.setOnClickListener {
-            button.g
-            // Code here executes on main thread after user presses button
-        }
+
+    }
+    private fun openSecondActivity(biteBy : String) {
+        val intent = Intent(this, SecondActivity::class.java)
+        intent.putExtra("bite_by", biteBy)
+        startActivity(intent)
     }
 }
